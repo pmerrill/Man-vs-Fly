@@ -374,7 +374,7 @@ if (gdjs.GameOverCode.condition3IsTrue_0.val) {
 /* Reuse gdjs.GameOverCode.GDuserNameEntryObjects1 */
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
 }{runtimeScene.getGame().getVariables().getFromIndex(7).setString((( gdjs.GameOverCode.GDuserNameEntryObjects1.length === 0 ) ? "" :gdjs.GameOverCode.GDuserNameEntryObjects1[0].getString()));
-}{gdjs.evtTools.storage.writeStringInJSONFile("username", "username", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(7))));
+}{gdjs.evtTools.storage.writeStringInJSONFile("username", "username", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(7)));
 }}
 
 }
@@ -667,9 +667,9 @@ gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOn
 if (gdjs.GameOverCode.condition2IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("usernameText"), gdjs.GameOverCode.GDusernameTextObjects1);
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
-}{runtimeScene.getGame().getVariables().getFromIndex(7).setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(1))));
+}{runtimeScene.getGame().getVariables().getFromIndex(7).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)));
 }{for(var i = 0, len = gdjs.GameOverCode.GDusernameTextObjects1.length ;i < len;++i) {
-    gdjs.GameOverCode.GDusernameTextObjects1[i].setString("Username: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(7))));
+    gdjs.GameOverCode.GDusernameTextObjects1[i].setString("Username: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(7)));
 }
 }}
 
