@@ -1,0 +1,84 @@
+{
+  "name": "Man vs Fly",
+  "short_name": "Man vs Fly",
+  "id": "fun.manvsfly.game",
+  "description": "The year is 1848 and you are among the first to travel west in what will later be known as the Gold Rush. The journey is filled with hardships that you must overcome. You feel your sanity slipping away as you near your destination. One morning, a swarm of flies catches scent of you and descends upon your camp. Rather than ignore them, like a normal person, you snap and decide to shoot them all.",
+  "orientation": "portrait",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": [{
+        "src": "5c83019297d94dd1755040d9b10dc1aa1d047bfb04a23c38711f59e4d12e3105-20x20.png",
+        "sizes": "20x20"
+      },{
+        "src": "eeb64557113f64996a486d9450d9349020ca8fc6b3ca353d78fe8588bf266dc5-29x29.png",
+        "sizes": "29x29"
+      },{
+        "src": "9066dba761fd6b21ead84d84a314c83afd37a26172274835546cc1686ca52512-36x36.png",
+        "sizes": "36x36"
+      },{
+        "src": "a2902a3397810c3b48517d696ed3dffa1c8fba759ccfd611fc06df1ee9ed622e-40x40.png",
+        "sizes": "40x40"
+      },{
+        "src": "44ce84081220ca48c0344fc38014bd2dd99beadaab4f4ca7a2e5d558793542c4-48x48.png",
+        "sizes": "48x48"
+      },{
+        "src": "3b1d34a73c561f2531f437ea59e738593999124bf7bbf51aba867c3f9cb0a6b7-50x50.png",
+        "sizes": "50x50"
+      },{
+        "src": "622f771b524f5fd728ed0875ff810b75fa457b17fd79d848c57dfd9857467637-57x57.png",
+        "sizes": "57x57"
+      },{
+        "src": "dbb71e86f4283eab69156707b953dc247a858ce68acdfe628e8f317ba89ce0e7-58x58.png",
+        "sizes": "58x58"
+      },{
+        "src": "dfeec81087826b3927fa4b0a7d413a43f5fcd5d8d49c4f1309e3303acdbe150b-60x60.png",
+        "sizes": "60x60"
+      },{
+        "src": "a4a1e45ebeb43bc1403247772fc25aa54459d8d8171cedce3cc68990c8570d99-76x76.png",
+        "sizes": "72x72"
+      },{
+        "src": "a4a1e45ebeb43bc1403247772fc25aa54459d8d8171cedce3cc68990c8570d99-76x76.png",
+        "sizes": "76x76"
+      },{
+        "src": "7160e5591b910862f307d210b5cd62095c746d13f833e0628b056488057c12fb-80x80.png",
+        "sizes": "80x80"
+      },{
+        "src": "12b6a73f304bc924cdfa5e18099697f40208501d56dc1f8198720b11d12f3646-87x87.png",
+        "sizes": "87x87"
+      },{
+        "src": "5597f7ea4b3d089b2ec7425dfdc99e144b6d6c3de4dfda849df6237181a0e9d7-96x96.png",
+        "sizes": "96x96"
+      },{
+        "src": "ef86ec202e90fca230c92743aad8a9efd35fc744a9743412fb984cbcde7d9178-100x100.png",
+        "sizes": "100x100"
+      },{
+        "src": "ee2f231b12a002f96d1906521f45f1aa9146e1ce2430ad6fb02be2307e7b6427-114x114.png",
+        "sizes": "114x114"
+      },{
+        "src": "b8cd67a7537360b8cdccdddbed0498530b4475b43c1eff71846a404667814bbc-120x120.png",
+        "sizes": "120x120"
+      },{
+        "src": "ff0a43100208544d0fe7a1caef123a330e1a707af1f213fa7e920038cf6d9532-144x144.png",
+        "sizes": "144x144"
+      },{
+        "src": "a27d5549f084d3f75c35f8af9e9b4cf99a0a277bd2f287eb0f20218412388076-152x152.png",
+        "sizes": "152x152"
+      },{
+        "src": "7fc27c0217c5fabe5830a5b0ede637681aff069e7210917d1b46fa7456fdecaf-167x167.png",
+        "sizes": "167x167"
+      },{
+        "src": "4a18b2d2d03a314a5b5cf7fc02f9bb6825a0b3f6cba5e88cfaad8ba0ddb4a872-180x180.png",
+        "sizes": "180x180"
+      },{
+        "src": "bd96ab7206f038eaa0d674bf4976b5083c95758f26c8fb47fc6f82dbb99f5ff1-192x192.png",
+        "sizes": "192x192"
+      },{
+        "src": "a4f2a322a9d5236a347aab8c95af141255a97daf19e58cc21e6a75cf0a57a00b-512x512.png",
+        "sizes": "512x512"
+      },{
+        "src": "e0b53b123c2d4770d0e5d27cb7658a7efe3820f068b7efb83be999d798d88160-1024x1024.png",
+        "sizes": "1024x1024"
+      }]
+}
