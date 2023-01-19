@@ -81,17 +81,11 @@ gdjs.evtsExt__MultitouchJoystick__MultitouchJoystick.MultitouchJoystick = class 
   _setFloatingEnabled(newValue) {
     this._behaviorData.FloatingEnabled = newValue;
   }
-  _toggleFloatingEnabled() {
-    this._setFloatingEnabled(!this._getFloatingEnabled());
-  }
   _getFloatingEnabled() {
     return this._behaviorData.FloatingEnabled !== undefined ? this._behaviorData.FloatingEnabled : false;
   }
   _setFloatingEnabled(newValue) {
     this._behaviorData.FloatingEnabled = newValue;
-  }
-  _toggleFloatingEnabled() {
-    this._setFloatingEnabled(!this._getFloatingEnabled());
   }
   _getDeadZoneRadius() {
     return this._behaviorData.DeadZoneRadius !== undefined ? this._behaviorData.DeadZoneRadius : Number("0.4") || 0;
@@ -117,9 +111,6 @@ gdjs.evtsExt__MultitouchJoystick__MultitouchJoystick.MultitouchJoystick = class 
   _setIsPressed(newValue) {
     this._behaviorData.IsPressed = newValue;
   }
-  _toggleIsPressed() {
-    this._setIsPressed(!this._getIsPressed());
-  }
   _getTouchID() {
     return this._behaviorData.TouchID !== undefined ? this._behaviorData.TouchID : Number("0") || 0;
   }
@@ -137,9 +128,6 @@ gdjs.evtsExt__MultitouchJoystick__MultitouchJoystick.MultitouchJoystick = class 
   }
   _setButtonReleased(newValue) {
     this._behaviorData.ButtonReleased = newValue;
-  }
-  _toggleButtonReleased() {
-    this._setButtonReleased(!this._getButtonReleased());
   }
   _getTouchCounter() {
     return this._behaviorData.TouchCounter !== undefined ? this._behaviorData.TouchCounter : Number("") || 0;

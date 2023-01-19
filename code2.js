@@ -87,8 +87,8 @@ gdjs.copyArray(runtimeScene.getObjects("userNameEntry"), gdjs.GameOverCode.GDuse
 }{for(var i = 0, len = gdjs.GameOverCode.GDuserHighScoreObjects1.length ;i < len;++i) {
     gdjs.GameOverCode.GDuserHighScoreObjects1[i].hide();
 }
-}{gdjs.evtTools.storage.readNumberFromJSONFile("highScore", "highScore", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0));
-}{gdjs.evtTools.storage.readStringFromJSONFile("username", "username", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1));
+}{gdjs.evtTools.storage.readNumberFromJSONFile("highScore", "highScore", runtimeScene, runtimeScene.getVariables().getFromIndex(0));
+}{gdjs.evtTools.storage.readStringFromJSONFile("username", "username", runtimeScene, runtimeScene.getVariables().getFromIndex(1));
 }}
 
 }
@@ -280,7 +280,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gd
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition1IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15416748);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15396156);
 }
 }}
 if (gdjs.GameOverCode.condition1IsTrue_0.val) {
@@ -305,7 +305,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15417932);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15397340);
 }
 }}
 }
@@ -365,7 +365,7 @@ gdjs.GameOverCode.condition2IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gd
 }if ( gdjs.GameOverCode.condition2IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition3IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15420212);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15399620);
 }
 }}
 }
@@ -390,7 +390,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoo
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition1IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15421460);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15400804);
 }
 }}
 if (gdjs.GameOverCode.condition1IsTrue_0.val) {
@@ -425,7 +425,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15422508);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15402116);
 }
 }}
 }
@@ -450,7 +450,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15423220);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15403476);
 }
 }}
 }
@@ -481,7 +481,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15425308);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15404676);
 }
 }}
 }
@@ -516,11 +516,11 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.leaderboards.hasSavingE
 gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > 0;
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
-gdjs.GameOverCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0));
+gdjs.GameOverCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0));
 }if ( gdjs.GameOverCode.condition2IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition3IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15427228);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15406596);
 }
 }}
 }
@@ -570,7 +570,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoo
 
 gdjs.GameOverCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 0;
+gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) == 0;
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("userHighScore"), gdjs.GameOverCode.GDuserHighScoreObjects1);
 {for(var i = 0, len = gdjs.GameOverCode.GDuserHighScoreObjects1.length ;i < len;++i) {
@@ -587,17 +587,17 @@ gdjs.copyArray(runtimeScene.getObjects("userHighScore"), gdjs.GameOverCode.GDuse
 gdjs.GameOverCode.condition0IsTrue_0.val = false;
 gdjs.GameOverCode.condition1IsTrue_0.val = false;
 {
-gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) > 0;
+gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) > 0;
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition1IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15430004);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15409372);
 }
 }}
 if (gdjs.GameOverCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("userHighScore"), gdjs.GameOverCode.GDuserHighScoreObjects1);
 {for(var i = 0, len = gdjs.GameOverCode.GDuserHighScoreObjects1.length ;i < len;++i) {
-    gdjs.GameOverCode.GDuserHighScoreObjects1[i].setString("Your High Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0))));
+    gdjs.GameOverCode.GDuserHighScoreObjects1[i].setString("Your High Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0))));
 }
 }{for(var i = 0, len = gdjs.GameOverCode.GDuserHighScoreObjects1.length ;i < len;++i) {
     gdjs.GameOverCode.GDuserHighScoreObjects1[i].hide(false);
@@ -617,11 +617,11 @@ gdjs.GameOverCode.condition2IsTrue_0.val = false;
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > 0;
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
-gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0));
+gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0));
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15430644);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15410012);
 }
 }}
 }
@@ -653,21 +653,21 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 gdjs.GameOverCode.condition1IsTrue_0.val = false;
 gdjs.GameOverCode.condition2IsTrue_0.val = false;
 {
-gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)) != "";
+gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(1)) != "";
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
-gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)) != "0";
+gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(1)) != "0";
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15433068);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15412436);
 }
 }}
 }
 if (gdjs.GameOverCode.condition2IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("usernameText"), gdjs.GameOverCode.GDusernameTextObjects1);
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
-}{runtimeScene.getGame().getVariables().getFromIndex(7).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)));
+}{runtimeScene.getGame().getVariables().getFromIndex(7).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(1)));
 }{for(var i = 0, len = gdjs.GameOverCode.GDusernameTextObjects1.length ;i < len;++i) {
     gdjs.GameOverCode.GDusernameTextObjects1[i].setString("Username: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(7)));
 }

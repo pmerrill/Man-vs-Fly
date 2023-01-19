@@ -60,7 +60,7 @@ gdjs.copyArray(runtimeScene.getObjects("userHighScore"), gdjs.WinnerCode.GDuserH
 }{for(var i = 0, len = gdjs.WinnerCode.GDuserHighScoreObjects1.length ;i < len;++i) {
     gdjs.WinnerCode.GDuserHighScoreObjects1[i].hide();
 }
-}{gdjs.evtTools.storage.readNumberFromJSONFile("highScore", "highScore", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0));
+}{gdjs.evtTools.storage.readNumberFromJSONFile("highScore", "highScore", runtimeScene, runtimeScene.getVariables().getFromIndex(0));
 }}
 
 }
@@ -122,7 +122,7 @@ gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs
 }if ( gdjs.WinnerCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WinnerCode.conditionTrue_1 = gdjs.WinnerCode.condition1IsTrue_0;
-gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15467068);
+gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15446132);
 }
 }}
 if (gdjs.WinnerCode.condition1IsTrue_0.val) {
@@ -165,7 +165,7 @@ gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoole
 
 gdjs.WinnerCode.condition0IsTrue_0.val = false;
 {
-gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 0;
+gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) == 0;
 }if (gdjs.WinnerCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("userHighScore"), gdjs.WinnerCode.GDuserHighScoreObjects1);
 {for(var i = 0, len = gdjs.WinnerCode.GDuserHighScoreObjects1.length ;i < len;++i) {
@@ -182,17 +182,17 @@ gdjs.copyArray(runtimeScene.getObjects("userHighScore"), gdjs.WinnerCode.GDuserH
 gdjs.WinnerCode.condition0IsTrue_0.val = false;
 gdjs.WinnerCode.condition1IsTrue_0.val = false;
 {
-gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) > 0;
+gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) > 0;
 }if ( gdjs.WinnerCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WinnerCode.conditionTrue_1 = gdjs.WinnerCode.condition1IsTrue_0;
-gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15470188);
+gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15449252);
 }
 }}
 if (gdjs.WinnerCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("userHighScore"), gdjs.WinnerCode.GDuserHighScoreObjects1);
 {for(var i = 0, len = gdjs.WinnerCode.GDuserHighScoreObjects1.length ;i < len;++i) {
-    gdjs.WinnerCode.GDuserHighScoreObjects1[i].setString("Your High Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0))));
+    gdjs.WinnerCode.GDuserHighScoreObjects1[i].setString("Your High Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0))));
 }
 }{for(var i = 0, len = gdjs.WinnerCode.GDuserHighScoreObjects1.length ;i < len;++i) {
     gdjs.WinnerCode.GDuserHighScoreObjects1[i].hide(false);
@@ -212,11 +212,11 @@ gdjs.WinnerCode.condition2IsTrue_0.val = false;
 gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > 0;
 }if ( gdjs.WinnerCode.condition0IsTrue_0.val ) {
 {
-gdjs.WinnerCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0));
+gdjs.WinnerCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0));
 }if ( gdjs.WinnerCode.condition1IsTrue_0.val ) {
 {
 {gdjs.WinnerCode.conditionTrue_1 = gdjs.WinnerCode.condition2IsTrue_0;
-gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15472292);
+gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15451356);
 }
 }}
 }

@@ -129,9 +129,6 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
   _setIsHealthJustDamaged(newValue) {
     this._behaviorData.IsHealthJustDamaged = newValue;
   }
-  _toggleIsHealthJustDamaged() {
-    this._setIsHealthJustDamaged(!this._getIsHealthJustDamaged());
-  }
   _getHealthRegenRate() {
     return this._behaviorData.HealthRegenRate !== undefined ? this._behaviorData.HealthRegenRate : Number("0") || 0;
   }
@@ -150,26 +147,17 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
   _setAllowOverHealing(newValue) {
     this._behaviorData.AllowOverHealing = newValue;
   }
-  _toggleAllowOverHealing() {
-    this._setAllowOverHealing(!this._getAllowOverHealing());
-  }
   _getHitAtLeastOnce() {
     return this._behaviorData.HitAtLeastOnce !== undefined ? this._behaviorData.HitAtLeastOnce : false;
   }
   _setHitAtLeastOnce(newValue) {
     this._behaviorData.HitAtLeastOnce = newValue;
   }
-  _toggleHitAtLeastOnce() {
-    this._setHitAtLeastOnce(!this._getHitAtLeastOnce());
-  }
   _getIsJustHealed() {
     return this._behaviorData.IsJustHealed !== undefined ? this._behaviorData.IsJustHealed : false;
   }
   _setIsJustHealed(newValue) {
     this._behaviorData.IsJustHealed = newValue;
-  }
-  _toggleIsJustHealed() {
-    this._setIsJustHealed(!this._getIsJustHealed());
   }
   _getCurrentShieldPoints() {
     return this._behaviorData.CurrentShieldPoints !== undefined ? this._behaviorData.CurrentShieldPoints : Number("") || 0;
@@ -201,9 +189,6 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
   _setBlockExcessDamage(newValue) {
     this._behaviorData.BlockExcessDamage = newValue;
   }
-  _toggleBlockExcessDamage() {
-    this._setBlockExcessDamage(!this._getBlockExcessDamage());
-  }
   _getShieldRegenDelay() {
     return this._behaviorData.ShieldRegenDelay !== undefined ? this._behaviorData.ShieldRegenDelay : Number("") || 0;
   }
@@ -215,9 +200,6 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
   }
   _setIsShieldJustDamaged(newValue) {
     this._behaviorData.IsShieldJustDamaged = newValue;
-  }
-  _toggleIsShieldJustDamaged() {
-    this._setIsShieldJustDamaged(!this._getIsShieldJustDamaged());
   }
   _getChanceToDodge() {
     return this._behaviorData.ChanceToDodge !== undefined ? this._behaviorData.ChanceToDodge : Number("0") || 0;
@@ -248,9 +230,6 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
   }
   _setIsJustDodged(newValue) {
     this._behaviorData.IsJustDodged = newValue;
-  }
-  _toggleIsJustDodged() {
-    this._setIsJustDodged(!this._getIsJustDodged());
   }
   _getShieldDamageTaken() {
     return this._behaviorData.ShieldDamageTaken !== undefined ? this._behaviorData.ShieldDamageTaken : Number("") || 0;
@@ -671,7 +650,7 @@ for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPr
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val ) {
 {
 {gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(14481956);
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(14461332);
 }
 }}
 if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val) {

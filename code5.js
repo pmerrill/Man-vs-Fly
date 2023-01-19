@@ -65,7 +65,7 @@ gdjs.CreditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdj
 }if ( gdjs.CreditsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.CreditsCode.conditionTrue_1 = gdjs.CreditsCode.condition1IsTrue_0;
-gdjs.CreditsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15489428);
+gdjs.CreditsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15468492);
 }
 }}
 if (gdjs.CreditsCode.condition1IsTrue_0.val) {
@@ -86,7 +86,7 @@ gdjs.CreditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdj
 }if ( gdjs.CreditsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.CreditsCode.conditionTrue_1 = gdjs.CreditsCode.condition1IsTrue_0;
-gdjs.CreditsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15490484);
+gdjs.CreditsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15469548);
 }
 }}
 if (gdjs.CreditsCode.condition1IsTrue_0.val) {
@@ -129,7 +129,7 @@ gdjs.copyArray(gdjs.CreditsCode.GDBackButtonTextObjects1_1final, gdjs.CreditsCod
 }if ( gdjs.CreditsCode.condition1IsTrue_0.val ) {
 {
 {gdjs.CreditsCode.conditionTrue_1 = gdjs.CreditsCode.condition2IsTrue_0;
-gdjs.CreditsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15492428);
+gdjs.CreditsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15471492);
 }
 }}
 }

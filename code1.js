@@ -234,7 +234,7 @@ gdjs.GameCode.condition0IsTrue_0.val = !(gdjs.evtsExt__Gamepads__C_Axis_pushed.f
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15302388);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15281796);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -253,7 +253,7 @@ gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBulletObjects1Objects = Hashtable.newFr
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBulletObjects1Objects = Hashtable.newFrom({"Bullet": gdjs.GameCode.GDBulletObjects1});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDFlyObjects1Objects = Hashtable.newFrom({"Fly": gdjs.GameCode.GDFlyObjects1});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBulletObjects1Objects = Hashtable.newFrom({"Bullet": gdjs.GameCode.GDBulletObjects1});
-gdjs.GameCode.asyncCallback15326428 = function (runtimeScene, asyncObjectsList) {
+gdjs.GameCode.asyncCallback15305836 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "GameOver", true);
 }}
 gdjs.GameCode.eventsList1 = function(runtimeScene) {
@@ -264,7 +264,7 @@ gdjs.GameCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.75), (runtimeScene) => (gdjs.GameCode.asyncCallback15326428(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.75), (runtimeScene) => (gdjs.GameCode.asyncCallback15305836(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -272,7 +272,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.75
 
 
 };gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDExplosionObjects2Objects = Hashtable.newFrom({"Explosion": gdjs.GameCode.GDExplosionObjects2});
-gdjs.GameCode.asyncCallback15328236 = function (runtimeScene, asyncObjectsList) {
+gdjs.GameCode.asyncCallback15307644 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Winner", true);
 }}
 gdjs.GameCode.eventsList2 = function(runtimeScene, asyncObjectsList) {
@@ -284,14 +284,14 @@ gdjs.GameCode.eventsList2 = function(runtimeScene, asyncObjectsList) {
 const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.75), (runtimeScene) => (gdjs.GameCode.asyncCallback15328236(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.75), (runtimeScene) => (gdjs.GameCode.asyncCallback15307644(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.GameCode.asyncCallback15328308 = function (runtimeScene, asyncObjectsList) {
+};gdjs.GameCode.asyncCallback15307716 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(runtimeScene.getObjects("Bullet"), gdjs.GameCode.GDBulletObjects2);
 gdjs.copyArray(asyncObjectsList.getObjects("Fly"), gdjs.GameCode.GDFlyObjects2);
 
@@ -317,7 +317,7 @@ gdjs.GameCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.GameCode.GDFlyObjects1) asyncObjectsList.addObject("Fly", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.GameCode.asyncCallback15328308(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.GameCode.asyncCallback15307716(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -364,11 +364,11 @@ gdjs.GameCode.GDSmallRockObjects1.length = 0;
     gdjs.GameCode.GDcurrentScoreObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3))));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDtimeLeftObjects1.length ;i < len;++i) {
-    gdjs.GameCode.GDtimeLeftObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3))));
+    gdjs.GameCode.GDtimeLeftObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(3))));
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3)));
+}{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(3)));
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "timeLeft");
-}{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(3);
+}{runtimeScene.getVariables().getFromIndex(0).setNumber(3);
 }{for(var i = 0, len = gdjs.GameCode.GDShotsLeftObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDShotsLeftObjects1[i].setOpacity(190);
 }
@@ -505,14 +505,14 @@ gdjs.copyArray(runtimeScene.getObjects("JoystickLeftThumbPad"), gdjs.GameCode.GD
 }{for(var i = 0, len = gdjs.GameCode.GDJoystickLeftObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDJoystickLeftObjects1[i].getBehavior("MultitouchJoystick").ActivateJoystick(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDJoystickLeftThumbPadObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber((( gdjs.GameCode.GDHeroObjects1.length === 0 ) ? 0 :gdjs.GameCode.GDHeroObjects1[0].getBehavior("FireBullet").AmmoQuantity((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
-}{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber((( gdjs.GameCode.GDFlyObjects1.length === 0 ) ? 0 :gdjs.GameCode.GDFlyObjects1[0].getPointX("")));
-}{runtimeScene.getScene().getVariables().getFromIndex(2).setNumber((( gdjs.GameCode.GDFlyObjects1.length === 0 ) ? 0 :gdjs.GameCode.GDFlyObjects1[0].getPointY("")));
+}{runtimeScene.getVariables().getFromIndex(0).setNumber((( gdjs.GameCode.GDHeroObjects1.length === 0 ) ? 0 :gdjs.GameCode.GDHeroObjects1[0].getBehavior("FireBullet").AmmoQuantity((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}{runtimeScene.getVariables().getFromIndex(1).setNumber((( gdjs.GameCode.GDFlyObjects1.length === 0 ) ? 0 :gdjs.GameCode.GDFlyObjects1[0].getPointX("")));
+}{runtimeScene.getVariables().getFromIndex(2).setNumber((( gdjs.GameCode.GDFlyObjects1.length === 0 ) ? 0 :gdjs.GameCode.GDFlyObjects1[0].getPointY("")));
 }{for(var i = 0, len = gdjs.GameCode.GDFlyXObjects1.length ;i < len;++i) {
-    gdjs.GameCode.GDFlyXObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(1))));
+    gdjs.GameCode.GDFlyXObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(1))));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDFlyYObjects1.length ;i < len;++i) {
-    gdjs.GameCode.GDFlyYObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2))));
+    gdjs.GameCode.GDFlyYObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(2))));
 }
 }}
 
@@ -882,7 +882,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects1.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects1.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15309404);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15288812);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -909,7 +909,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects1.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects1.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15310580);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15289988);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -968,7 +968,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDJoystickLeftObjects1.length;i<l;++i) {
 gdjs.GameCode.GDJoystickLeftObjects1.length = k;}if ( gdjs.GameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition2IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15312476);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15291884);
 }
 }}
 }
@@ -979,7 +979,7 @@ gdjs.copyArray(runtimeScene.getObjects("Hero"), gdjs.GameCode.GDHeroObjects1);
 {for(var i = 0, len = gdjs.GameCode.GDHeroObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDHeroObjects1[i].getBehavior("FireBullet").Fire((gdjs.GameCode.GDHeroObjects1[i].getPointX("Gun")), (gdjs.GameCode.GDHeroObjects1[i].getPointY("Gun")), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBulletObjects1Objects, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 850, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}{runtimeScene.getScene().getVariables().getFromIndex(0).sub(1);
+}{runtimeScene.getVariables().getFromIndex(0).sub(1);
 }{for(var i = 0, len = gdjs.GameCode.GDBulletObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDBulletObjects1[i].setZOrder((( gdjs.GameCode.GDFlyObjects1.length === 0 ) ? 0 :gdjs.GameCode.GDFlyObjects1[0].getZOrder()));
 }
@@ -1089,7 +1089,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTes
 
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 3;
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) == 3;
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ShotsLeft"), gdjs.GameCode.GDShotsLeftObjects1);
 {for(var i = 0, len = gdjs.GameCode.GDShotsLeftObjects1.length ;i < len;++i) {
@@ -1105,7 +1105,7 @@ gdjs.copyArray(runtimeScene.getObjects("ShotsLeft"), gdjs.GameCode.GDShotsLeftOb
 
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 2;
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) == 2;
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ShotsLeft"), gdjs.GameCode.GDShotsLeftObjects1);
 {for(var i = 0, len = gdjs.GameCode.GDShotsLeftObjects1.length ;i < len;++i) {
@@ -1121,7 +1121,7 @@ gdjs.copyArray(runtimeScene.getObjects("ShotsLeft"), gdjs.GameCode.GDShotsLeftOb
 
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 1;
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) == 1;
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ShotsLeft"), gdjs.GameCode.GDShotsLeftObjects1);
 {for(var i = 0, len = gdjs.GameCode.GDShotsLeftObjects1.length ;i < len;++i) {
@@ -1137,7 +1137,7 @@ gdjs.copyArray(runtimeScene.getObjects("ShotsLeft"), gdjs.GameCode.GDShotsLeftOb
 
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 0;
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0)) == 0;
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ShotsLeft"), gdjs.GameCode.GDShotsLeftObjects1);
 {for(var i = 0, len = gdjs.GameCode.GDShotsLeftObjects1.length ;i < len;++i) {
@@ -1183,7 +1183,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDFlyObjects1.length;i<l;++i) {
 gdjs.GameCode.GDFlyObjects1.length = k;}if ( gdjs.GameCode.condition2IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition3IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15320620);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15300028);
 }
 }}
 }
@@ -1210,7 +1210,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerElapse
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15321804);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15301212);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1252,9 +1252,9 @@ gdjs.GameCode.condition0IsTrue_0.val = false;
 gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "timeLeft") > 0;
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("timeLeft"), gdjs.GameCode.GDtimeLeftObjects1);
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(Math.round(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3)) - gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "timeLeft")));
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(Math.round(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(3)) - gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "timeLeft")));
 }{for(var i = 0, len = gdjs.GameCode.GDtimeLeftObjects1.length ;i < len;++i) {
-    gdjs.GameCode.GDtimeLeftObjects1[i].setString(gdjs.evtTools.common.toString(Math.round(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(3)) - gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "timeLeft"))));
+    gdjs.GameCode.GDtimeLeftObjects1[i].setString(gdjs.evtTools.common.toString(Math.round(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(3)) - gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "timeLeft"))));
 }
 }{for(var i = 0, len = gdjs.GameCode.GDtimeLeftObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDtimeLeftObjects1[i].setOpacity(200);
@@ -1281,7 +1281,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoolean
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15325228);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15304636);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1327,7 +1327,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDFlyObjects1.length;i<l;++i) {
 gdjs.GameCode.GDFlyObjects1.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15327212);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15306620);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {

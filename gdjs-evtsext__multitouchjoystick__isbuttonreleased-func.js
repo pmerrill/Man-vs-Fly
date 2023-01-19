@@ -19,7 +19,7 @@ gdjs.evtsExt__MultitouchJoystick__IsButtonReleased.eventsList0 = function(runtim
 
 gdjs.evtsExt__MultitouchJoystick__IsButtonReleased.condition0IsTrue_0.val = false;
 {
-gdjs.evtsExt__MultitouchJoystick__IsButtonReleased.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Buttons").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("Button") : "")).getChild("State")) == "Released";
+gdjs.evtsExt__MultitouchJoystick__IsButtonReleased.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Buttons").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("Button") : "")).getChild("State")) == "Released";
 }if (gdjs.evtsExt__MultitouchJoystick__IsButtonReleased.condition0IsTrue_0.val) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 

@@ -19,7 +19,7 @@ gdjs.evtsExt__MultitouchJoystick__IsButtonPressed.eventsList0 = function(runtime
 
 gdjs.evtsExt__MultitouchJoystick__IsButtonPressed.condition0IsTrue_0.val = false;
 {
-gdjs.evtsExt__MultitouchJoystick__IsButtonPressed.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Buttons").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("Button") : "")).getChild("State")) == "Pressed";
+gdjs.evtsExt__MultitouchJoystick__IsButtonPressed.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Buttons").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("Button") : "")).getChild("State")) == "Pressed";
 }if (gdjs.evtsExt__MultitouchJoystick__IsButtonPressed.condition0IsTrue_0.val) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 

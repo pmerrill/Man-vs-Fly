@@ -17,7 +17,7 @@ gdjs.evtsExt__MultitouchJoystick__SetButtonState.eventsList0 = function(runtimeS
 
 
 {
-{runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Buttons").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("Button") : "")).getChild("State").setString((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("ButtonState") : ""));
+{runtimeScene.getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Buttons").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("Button") : "")).getChild("State").setString((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("ButtonState") : ""));
 }}
 
 }

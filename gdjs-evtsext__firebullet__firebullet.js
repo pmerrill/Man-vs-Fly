@@ -111,9 +111,6 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet = class FireBullet extends gdjs.
   _setHasJustFired(newValue) {
     this._behaviorData.HasJustFired = newValue;
   }
-  _toggleHasJustFired() {
-    this._setHasJustFired(!this._getHasJustFired());
-  }
   _getFiringArc() {
     return this._behaviorData.FiringArc !== undefined ? this._behaviorData.FiringArc : Number("45") || 0;
   }
@@ -137,9 +134,6 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet = class FireBullet extends gdjs.
   }
   _setRotateBullet(newValue) {
     this._behaviorData.RotateBullet = newValue;
-  }
-  _toggleRotateBullet() {
-    this._setRotateBullet(!this._getRotateBullet());
   }
   _getAmmoQuantity() {
     return this._behaviorData.AmmoQuantity !== undefined ? this._behaviorData.AmmoQuantity : Number("0") || 0;
@@ -201,17 +195,11 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet = class FireBullet extends gdjs.
   _setUnlimitedAmmo(newValue) {
     this._behaviorData.UnlimitedAmmo = newValue;
   }
-  _toggleUnlimitedAmmo() {
-    this._setUnlimitedAmmo(!this._getUnlimitedAmmo());
-  }
   _getReloadInProgress() {
     return this._behaviorData.ReloadInProgress !== undefined ? this._behaviorData.ReloadInProgress : false;
   }
   _setReloadInProgress(newValue) {
     this._behaviorData.ReloadInProgress = newValue;
-  }
-  _toggleReloadInProgress() {
-    this._setReloadInProgress(!this._getReloadInProgress());
   }
   _getHeatIncreasePerShot() {
     return this._behaviorData.HeatIncreasePerShot !== undefined ? this._behaviorData.HeatIncreasePerShot : Number("0") || 0;
@@ -230,9 +218,6 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet = class FireBullet extends gdjs.
   }
   _setAutomaticReloading(newValue) {
     this._behaviorData.AutomaticReloading = newValue;
-  }
-  _toggleAutomaticReloading() {
-    this._setAutomaticReloading(!this._getAutomaticReloading());
   }
   _getOverheatDuration() {
     return this._behaviorData.OverheatDuration !== undefined ? this._behaviorData.OverheatDuration : Number("0") || 0;
