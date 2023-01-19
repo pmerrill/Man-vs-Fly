@@ -122,7 +122,7 @@ gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs
 }if ( gdjs.WinnerCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WinnerCode.conditionTrue_1 = gdjs.WinnerCode.condition1IsTrue_0;
-gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14529252);
+gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15467068);
 }
 }}
 if (gdjs.WinnerCode.condition1IsTrue_0.val) {
@@ -186,7 +186,7 @@ gdjs.WinnerCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumbe
 }if ( gdjs.WinnerCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WinnerCode.conditionTrue_1 = gdjs.WinnerCode.condition1IsTrue_0;
-gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14498588);
+gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15470188);
 }
 }}
 if (gdjs.WinnerCode.condition1IsTrue_0.val) {
@@ -216,7 +216,7 @@ gdjs.WinnerCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumbe
 }if ( gdjs.WinnerCode.condition1IsTrue_0.val ) {
 {
 {gdjs.WinnerCode.conditionTrue_1 = gdjs.WinnerCode.condition2IsTrue_0;
-gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13071060);
+gdjs.WinnerCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15472292);
 }
 }}
 }

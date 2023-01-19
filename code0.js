@@ -114,7 +114,7 @@ gdjs.MenuCode.condition1IsTrue_1 = {val:false};
 gdjs.MenuCode.condition2IsTrue_1 = {val:false};
 
 
-gdjs.MenuCode.asyncCallback13158812 = function (runtimeScene, asyncObjectsList) {
+gdjs.MenuCode.asyncCallback15197236 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("Horse"), gdjs.MenuCode.GDHorseObjects3);
 
 {for(var i = 0, len = gdjs.MenuCode.GDHorseObjects3.length ;i < len;++i) {
@@ -134,14 +134,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 for (const obj of gdjs.MenuCode.GDHorseObjects2) asyncObjectsList.addObject("Horse", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.5), (runtimeScene) => (gdjs.MenuCode.asyncCallback13158812(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1.5), (runtimeScene) => (gdjs.MenuCode.asyncCallback15197236(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.MenuCode.asyncCallback11633476 = function (runtimeScene, asyncObjectsList) {
+};gdjs.MenuCode.asyncCallback15196996 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(runtimeScene.getObjects("Horse"), gdjs.MenuCode.GDHorseObjects2);
 {for(var i = 0, len = gdjs.MenuCode.GDHorseObjects2.length ;i < len;++i) {
     gdjs.MenuCode.GDHorseObjects2[i].hide(false);
@@ -158,7 +158,7 @@ gdjs.MenuCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(9), (runtimeScene) => (gdjs.MenuCode.asyncCallback11633476(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(9), (runtimeScene) => (gdjs.MenuCode.asyncCallback15196996(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -170,7 +170,7 @@ gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDCreditsButtonObjects1Objects = Hashtabl
 gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDPlayTextObjects1Objects = Hashtable.newFrom({"PlayText": gdjs.MenuCode.GDPlayTextObjects1});
 gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDPlayButtonObjects2Objects = Hashtable.newFrom({"PlayButton": gdjs.MenuCode.GDPlayButtonObjects2});
 gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDExplosionObjects1Objects = Hashtable.newFrom({"Explosion": gdjs.MenuCode.GDExplosionObjects1});
-gdjs.MenuCode.asyncCallback13375124 = function (runtimeScene, asyncObjectsList) {
+gdjs.MenuCode.asyncCallback15202580 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", true);
 }}
 gdjs.MenuCode.eventsList2 = function(runtimeScene) {
@@ -181,7 +181,7 @@ gdjs.MenuCode.eventsList2 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.MenuCode.asyncCallback13375124(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.MenuCode.asyncCallback15202580(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -291,7 +291,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11936196);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15198324);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
@@ -313,7 +313,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14292220);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15199444);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
@@ -377,7 +377,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoolean
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14219140);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15201260);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
@@ -434,7 +434,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14256996);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15203708);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
@@ -525,7 +525,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = !(gdjs.evtTools.systemInfo.hasTouchScreen
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14204924);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15207844);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {

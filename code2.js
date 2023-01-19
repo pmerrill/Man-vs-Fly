@@ -280,7 +280,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gd
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition1IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13175148);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15416748);
 }
 }}
 if (gdjs.GameOverCode.condition1IsTrue_0.val) {
@@ -305,7 +305,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12563068);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15417932);
 }
 }}
 }
@@ -365,7 +365,7 @@ gdjs.GameOverCode.condition2IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gd
 }if ( gdjs.GameOverCode.condition2IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition3IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14234396);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15420212);
 }
 }}
 }
@@ -390,7 +390,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoo
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition1IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8539244);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15421460);
 }
 }}
 if (gdjs.GameOverCode.condition1IsTrue_0.val) {
@@ -425,7 +425,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14203340);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15422508);
 }
 }}
 }
@@ -450,7 +450,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13087012);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15423220);
 }
 }}
 }
@@ -481,7 +481,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12062668);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15425308);
 }
 }}
 }
@@ -520,7 +520,7 @@ gdjs.GameOverCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition2IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition3IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14506916);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15427228);
 }
 }}
 }
@@ -591,7 +591,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition1IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12060804);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15430004);
 }
 }}
 if (gdjs.GameOverCode.condition1IsTrue_0.val) {
@@ -621,7 +621,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14362964);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15430644);
 }
 }}
 }
@@ -660,7 +660,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableStr
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10849340);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15433068);
 }
 }}
 }
