@@ -469,6 +469,41 @@ gdjs.copyArray(runtimeScene.getObjects("leaderboardSaveText"), gdjs.GameOverCode
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("leaderboardSaveText"), gdjs.GameOverCode.GDleaderboardSaveTextObjects1);
+
+gdjs.GameOverCode.condition0IsTrue_0.val = false;
+gdjs.GameOverCode.condition1IsTrue_0.val = false;
+gdjs.GameOverCode.condition2IsTrue_0.val = false;
+{
+gdjs.GameOverCode.condition0IsTrue_0.val = !(gdjs.evtTools.leaderboards.isSaving("e89a9251-06fe-446c-81de-0218ab93f592"));
+}if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
+{
+for(var i = 0, k = 0, l = gdjs.GameOverCode.GDleaderboardSaveTextObjects1.length;i<l;++i) {
+    if ( gdjs.GameOverCode.GDleaderboardSaveTextObjects1[i].getString() == "Saving score..." ) {
+        gdjs.GameOverCode.condition1IsTrue_0.val = true;
+        gdjs.GameOverCode.GDleaderboardSaveTextObjects1[k] = gdjs.GameOverCode.GDleaderboardSaveTextObjects1[i];
+        ++k;
+    }
+}
+gdjs.GameOverCode.GDleaderboardSaveTextObjects1.length = k;}if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
+{
+{gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14962556);
+}
+}}
+}
+if (gdjs.GameOverCode.condition2IsTrue_0.val) {
+/* Reuse gdjs.GameOverCode.GDleaderboardSaveTextObjects1 */
+{for(var i = 0, len = gdjs.GameOverCode.GDleaderboardSaveTextObjects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDleaderboardSaveTextObjects1[i].hide();
+}
+}}
+
+}
+
+
+{
+
 
 gdjs.GameOverCode.condition0IsTrue_0.val = false;
 gdjs.GameOverCode.condition1IsTrue_0.val = false;
@@ -520,7 +555,7 @@ gdjs.GameOverCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableNum
 }if ( gdjs.GameOverCode.condition2IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition3IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15406596);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8138628);
 }
 }}
 }
