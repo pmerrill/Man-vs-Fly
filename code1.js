@@ -1492,6 +1492,7 @@ gdjs.copyArray(runtimeScene.getObjects("Instructions"), gdjs.GameCode.GDInstruct
 }{for(var i = 0, len = gdjs.GameCode.GDArrowObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDArrowObjects1[i].hide();
 }
+}{gdjs.evtTools.storage.writeNumberInJSONFile("showInstructions", "showInstructions", gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(4)));
 }}
 
 }
