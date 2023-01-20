@@ -103,6 +103,9 @@ gdjs.MenuCode.GDSmallRockObjects3= [];
 gdjs.MenuCode.GDnoTouchScreenTextObjects1= [];
 gdjs.MenuCode.GDnoTouchScreenTextObjects2= [];
 gdjs.MenuCode.GDnoTouchScreenTextObjects3= [];
+gdjs.MenuCode.GDTipObjects1= [];
+gdjs.MenuCode.GDTipObjects2= [];
+gdjs.MenuCode.GDTipObjects3= [];
 
 gdjs.MenuCode.conditionTrue_0 = {val:false};
 gdjs.MenuCode.condition0IsTrue_0 = {val:false};
@@ -189,6 +192,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 
 
 };gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDSoundObjects1Objects = Hashtable.newFrom({"Sound": gdjs.MenuCode.GDSoundObjects1});
+gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDTipObjects1Objects = Hashtable.newFrom({"Tip": gdjs.MenuCode.GDTipObjects1});
 gdjs.MenuCode.eventsList3 = function(runtimeScene) {
 
 {
@@ -546,6 +550,34 @@ gdjs.copyArray(runtimeScene.getObjects("noTouchScreenText"), gdjs.MenuCode.GDnoT
 }
 
 
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Tip"), gdjs.MenuCode.GDTipObjects1);
+
+gdjs.MenuCode.condition0IsTrue_0.val = false;
+gdjs.MenuCode.condition1IsTrue_0.val = false;
+{
+gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDTipObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
+{
+{gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(14954132);
+}
+}}
+if (gdjs.MenuCode.condition1IsTrue_0.val) {
+{gdjs.evtTools.window.openURL("https://ko-fi.com/petermerrill", runtimeScene);
+}}
+
+}
+
+
 };
 
 gdjs.MenuCode.func = function(runtimeScene) {
@@ -653,6 +685,9 @@ gdjs.MenuCode.GDSmallRockObjects3.length = 0;
 gdjs.MenuCode.GDnoTouchScreenTextObjects1.length = 0;
 gdjs.MenuCode.GDnoTouchScreenTextObjects2.length = 0;
 gdjs.MenuCode.GDnoTouchScreenTextObjects3.length = 0;
+gdjs.MenuCode.GDTipObjects1.length = 0;
+gdjs.MenuCode.GDTipObjects2.length = 0;
+gdjs.MenuCode.GDTipObjects3.length = 0;
 
 gdjs.MenuCode.eventsList3(runtimeScene);
 
